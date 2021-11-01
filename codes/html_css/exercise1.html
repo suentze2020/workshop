@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        font-size: 30px;
+    }
+
+    h1.first_page {
+        color:blue;
+    }
+
+    h1.first_page#special {
+        color:red;
+    }
+
+    .rundown .morning h1 {
+        color: gold;
+    }
+
+    .levels, .values {
+            font-size:20px;
+            color:olive;
+    }
+
+    .box {
+        border-style:solid;
+        border-width:1px;
+        border-color:black;
+        width:50%;
+        padding:10px;
+        text-align:center;
+    }
+
+    .parent_box {
+        position:relative;
+        left:200px;
+    }
+
+    .box1 {
+        position:fixed;
+        top:20px;
+        left:20px;
+        left:
+        color:red;
+        background:silver;
+    }
+
+    .box2 {
+        color:blue;
+    }
+
+    .box3 {
+        color:green;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        float:left;
+    }
+
+    .menu ul li a {
+            text-decoration: none; 
+            color: #555;
+            padding: 8px 16px;
+            margin: 1px 0px;
+            background-color: #F5ECCE;
+    }
+
+    .menu ul li a:hover {
+            background-color: #555;
+            color: #F5ECCE;
+    }
+
+
+    .clear_float {
+        clear:both;
+    }
+
+
+</style>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Orange</a></li>
+            <li><a href="#">Banana</a></li>
+        </ul>
+    </div>
+    <div class="clear_float"></div>
+    <h1 class="first_page">My First Styled Page</h1>
+    <p class="first_page">This is a paragraph.</p>
+    <h1 class="first_page" id="special">My First Styled Page Special Topic</h1>
+    <div class="rundown">
+        <div class="morning">
+            <h1>Morning</h1>
+                1. 9:30-10:30am Introduction<br>
+                2. 10:30-11:30am HTML Elements<br>
+                3. 11:30-12:30pm The DOM<br>
+        </div>
+    </div>
+
+    <h1>Difficulty Level of CSS</h1>
+    <ol class="levels">
+        <li>High</li>
+        <li>Medium</li>
+        <li>Low</li>
+    </ol>
+    <h1>Values of Learning CSS</h1>
+    <ul class="values">
+        <li>Make web publishing fun.</li>
+        <li>Create appealing content.</li>
+        <li>Support easy reading.</li>
+    </ul>
+
+    <div class="parent_box">
+        <div class="box box1">
+            Box 1
+        </div>
+        <div class="box box2">
+            Box 2
+        </div>
+        <div class="box box3">
+            Box 3
+        </div>
+</body>
+</html>

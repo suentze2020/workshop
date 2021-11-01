@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif; 
+            /* font-family: Times New Roman, Garamond, Palatino, Georgia; */
+            /* font-family: Comic Sans MS, Adobe Poetica; */
+            /* font-family: Cottonwood, Critter; */
+            /* font-family: Courier New, Monaco; */
+            margin-left:40px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        nav ul li {
+        float:left;
+        }
+        
+        nav ul li a {
+            /* display: block;*/
+            color: #555;
+            padding: 8px 16px;
+            margin: 1px 0px;
+            background-color: #F5ECCE;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            background-color: #555;
+            color: #F5ECCE;
+        }
+
+
+        .clear_float {
+            clear: both;
+        }
+        
+        .box {
+            padding: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            width:30%;
+            margin: 20px 0px 2px 0px;
+        }
+
+        .box-1 {
+            background-color: green;
+            color: white;
+        }
+
+        .box-2 {
+            background-color: blue;
+            color: white;
+        }
+
+        .box-3 {
+            background-color: orange;
+            color: white;
+        }
+
+        h1.first_page {
+            color: blue;
+        }
+
+        h1.first_page#special {
+            color: red;
+        }
+
+        div .morning h1 {
+            color: gold;
+        }
+
+        div .afternoon h1 {
+            color: cornflowerblue;
+        }
+
+        .levels,.values {
+            font-size:20px;
+            color:olive;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <div style="clear: left;"></div>
+    <br><br>
+    <table width="30%" border="1" cellspacing="10px" cellpadding="20px" style="border-collapse:collapse; border-style:solid;border-width:.5px;border-color:black;">
+        <tr>
+            <th>First Name</th><th>Last Name</th><th>Major</th>
+        </tr>
+        <tr>
+            <td>Michael</td><td>Cheung</td><td>Psychology</td>
+        </tr>
+        <tr>
+            <td>On Yin</td><td>Chan</td><td>Physics</td>
+        </tr>
+        <tr>
+            <td>Wei</td><td>Hu</td><td>History</td>
+        </tr>
+    </table>
+    <br><br>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" style="padding:10px 5px;" name="fname" placeholder="Enter first name:">
+        <label for="lname">Last Name</label>
+        <input type="text" style="padding:10px 5px;" name="lname" placeholder="Enter last name:">
+        <br>
+        <input type="submit" value="Submit" style="padding:10px 5px;">  
+    </form>
+    <br><br>
+    <div class='box box-1'>
+        Box 1
+    </div>
+    <div class='box box-2'>
+        Box 2
+    </div>
+    <div class='box box-3'>
+        Box 3
+    </div>
+    <h1 class="first_page">My First Styled Page</h1>
+    <h1 class="first_page" id="special">Special Topic</h1>
+    <div class="rundown">
+        <div class="morning">
+          <h1>Morning</h1>
+          1. 9:30-10:30am Introduction<br>
+          2. 10:30-11:30am HTML Elements<br>
+          3. 11:30-12:30pm The DOM<br>
+        </div>
+        <div class="afternoon">
+          <h1>Afternoon</h1>
+          4. 2:00-3:00pm CSS Selectors<br>
+          5. 3:00-4:00pm 3 Ways of Defining Styles<br>
+          6. 4:00-5:00pm Box Model and Positioning<br>
+        </div>
+    </div>
+    <h1>Difficulty Level of CSS</h1>
+    <ol class="levels">
+        <li>High</li>
+        <li>Medium</li>
+        <li>Low</li>
+    </ol>
+    <h1>Values of Learning CSS</h1>
+    <ul class="values">
+        <li>Make web publishing fun.</li>
+        <li>Create appealing content.</li>
+        <li>Support easy reading.</li>
+    </ul>
+</body>
+</html>

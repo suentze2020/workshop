@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 2nd Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+     <style>
+        body {
+            font-family:'Zen Kaku Gothic New';
+        }
+        table {
+            font-family:"Times New Roman, Times, serif";
+            background:silver;
+            color:brown;
+        }
+
+        table.purple_anything {
+            color: red;
+            background: yellow;
+        }
+
+         h1.first_page {
+            color:burlywood;
+            font-size:40px;
+        }
+
+        h1.first_page#special {
+            color:cornflowerblue;
+            font-size:60px;
+        }
+
+        .rundown .morning h1 {
+            color:fuchsia;
+        }
+
+        .levels, .values {
+            font-size:20px;
+            color:lightsalmon;
+        }
+
+        .box {
+            padding: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            width:10%;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .box-1 {
+            background-color: green;
+            color: white;
+        }
+
+        .box-2 {
+            background-color: yellow;
+            color: white;
+        }
+
+        .box-3 {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent_box" style="position:relative;top:200px;left:200px;">
+    <div class="box box-1">
+        Box 1
+    </div>
+    <div class="box box-2" style="position:fixed;top:20px;left:20px;">
+        Box 2
+    </div>
+    <div class="box box-3">
+        Box 3
+    </div>
+    </div>
+    <h1>Difficulty Level of CSS</h1>
+    <ol class="levels">
+        <li>High</li>
+        <li>Medium</li>
+        <li>Low</li>
+    </ol>
+    <h1>Values of Learning CSS</h1>
+    <ul class="values">
+        <li>Make web publishing fun.</li>
+        <li>Create appealing content.</li>
+        <li>Support easy reading.</li>
+    </ul>
+    <div class="rundown">
+        <div class="morning">
+            <h1>Morning</h1>
+                1. 9:30-10:30am Introduction<br>
+                2. 10:30-11:30am HTML Elements<br>
+                3. 11:30-12:30pm The DOM<br>
+        </div>
+    </div>
+    <h1 class="first_page">This is the first page</h1>
+    <h1 class="first_page" id="special">Just another h1</h1>
+    <h1 class="purple_anything">Welcome to My Page!</h1>
+    <h2>My name is Bob.</h2>
+    <h3>I hope you like it here.</h3>  
+    <p>This is my paragraph.</p>
+    <img width="20%" height="20%" src="https://www.cuhk.edu.hk/english/images/cuhk_logo_2x.png">
+    <br>
+    <a href="https://www.cuhk.edu.hk" target="_blank">Go to cuhk</a>.<br>
+    <b>Bold text</b><br>
+    <i>Italic text</i><br>
+    <u>Underlined text</u><br>
+    <sub>Subscript text</sub><br>
+    <sup>Superscript text</sup><br>
+    <table cellpadding="10px" border="1">
+        <tr>
+            <th style="font-size: 30px; color: orange;">First Name</th><th>Last Name</th><th>Major</th>
+        </tr>
+        <tr>
+            <td>Michael</td><td>Chan</td><td>Journalism</td>
+        </tr>
+        <tr>
+            <td>David</td><td>Lee</td><td>Cultural Study</td>
+        </tr>
+        <tr>
+            <td>Mary</td><td>Lu</td><td>Philosophy</td>
+        </tr>
+    </table>
+    <table style="font-family:Arial, Helvetica, sans-serif;" class="purple_anything" cellpadding="10px" border="1">
+        <tr>
+            <th>First Name</th><th>Last Name</th><th>Major</th>
+        </tr>
+        <tr>
+            <td>Michael</td><td>Chan</td><td>Journalism</td>
+        </tr>
+        <tr>
+            <td>David</td><td>Lee</td><td>Cultural Study</td>
+        </tr>
+        <tr>
+            <td>Mary</td><td>Lu</td><td>Philosophy</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </ul>
+    <br>
+    <form action="/register" method="post">
+        <label for="fname">First Name</label><br>
+        <input type="text" name="fname" placeholder="Enter First Name"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" placeholder="Enter Last Name"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" placeholder="Must be more than 6 characters"><br>
+        <input type="submit" value="Submit"><br>
+     </form>
+     
+</body>
+</html>

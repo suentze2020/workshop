@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="welcome">
+    <div class="site-heading">
+        {% if username %}
+        <h1>Hello {{username}}!</h1>
+        {% else %}
+       
+        {% endif %}
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+             {% for message in messages %}
+                 <div class="alert alert-warning" role="alert">
+                    <h3>{{ message }}</h3>
+                </div>
+             {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+</div><!-- end welcome -->
+{% endblock %}
